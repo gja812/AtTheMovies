@@ -1,0 +1,12 @@
+﻿
+
+<div data-ng-controller="ListController">
+  There are {{movies.length}} movies.<hr/>
+  <table>
+    <tr ng-repeat="movie in movies ">
+      <td>{{movie.Title}}</td>
+      <td><a href="#!/details/{{movie.Id}}">Details</a></td>
+      <td>{{movie.Runtime}}</td>
+    </tr>
+  </table>
+</div>
